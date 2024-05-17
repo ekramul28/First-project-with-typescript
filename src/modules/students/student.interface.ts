@@ -4,7 +4,7 @@ import { Schema, model, connect } from 'mongoose';
 export type Guardian = {
   fatherName: string;
   fatherOccupation: string;
-  fatherContactNo: string;
+  fatherContactNo: number;
   motherName: string;
   motherOccupation: string;
   motherContactNo: string;
@@ -27,14 +27,14 @@ export type Student = {
   id: string;
   name: UserName;
   gender: 'male' | 'female';
-  dateOfBirth: string;
+  dateOfBirth?: string;
   contactNo: string;
-  emergancyContactNo: string;
+  emergencyContactNo: string;
   email: string;
-  bloodGroup?: 'A+' | 'A-' | 'B+';
+  bloodGroup?: 'A+' | 'A-' | 'B+' | 'B-' | 'AB+' | 'AB-' | 'O+' | 'O-';
   permanentAddres: string;
   guardian: Guardian;
   localGuardian: LocalGuardian;
   profileImage?: string;
-  isActive: 'active' | 'inactive';
+  isActive: 'active' | 'block';
 };
