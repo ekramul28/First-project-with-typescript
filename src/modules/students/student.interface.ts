@@ -7,7 +7,7 @@ export type Guardian = {
   fatherContactNo: number;
   motherName: string;
   motherOccupation: string;
-  motherContactNo: string;
+  motherContactNo: number;
 };
 
 export type UserName = {
