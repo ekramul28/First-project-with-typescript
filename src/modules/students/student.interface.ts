@@ -1,6 +1,3 @@
-import { SrvRecord } from 'dns';
-import { Schema, model, connect } from 'mongoose';
-
 export type Guardian = {
   fatherName: string;
   fatherOccupation: string;
